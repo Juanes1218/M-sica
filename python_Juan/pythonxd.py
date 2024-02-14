@@ -1,56 +1,19 @@
-import os
-def limpiar_pantalla():
-    if os.name == 'posix':
-        os.system('clear')
+from funciones import limpiar_pantalla, mostrar_menu_principal, menu_campers, menu_coordinador
 
 
-
-
-print("--------------------------------")
-print("--                            --")
-print("--         BIENVENIDO         --")
-print("--                            --")
-print("--------------------------------")
-print("")
-print ("Escoge tu rol")
-print("")
-print("1 Coordinador\t2 Trainer")
-print("")
-rol = int(input("---->"))
-
-
-
-
-def Coordinador(rol):
-    if rol ==1:
+while True:
         limpiar_pantalla()
-        print("--------------------------------")
-        print("--                            --")
-        print("--   BIENVENIDO COORDINADOR   --")
-        print("--                            --")
-        print("--------------------------------")
-        print("")
-        print("¿Que modulo deseas importar?")
-        print("") 
-        print("1 CAMPERS\t 2 Trainers")
-        a = int(input("---->"))
-        print("")
-        if a== 1:
-            print("CAMPERS")
-        elif a==2:
-            print("Trainers")
+        mostrar_menu_principal()
+        rol = input("---->")
+        if rol == '1':
+            menu_coordinador()
+        elif rol == '2':
+            print("Funcionalidad de Trainer aún no implementada")
+            input("Presiona Enter para continuar...")
+        else:
+            print("Rol no válido. Por favor, elige una opción válida.")
 
-rol=int(input("----->"))
-print(Coordinador(rol))
-
-
-
-
-if rol ==2:
-    limpiar_pantalla()
-    print("--------------------------------")
-    print("--                            --")
-    print("--     BIENVENIDO TRAINER     --")
-    print("--                            --")
-    print("--------------------------------")
-    print("")
+        salir = input("¿Deseas salir? (s/n): ")
+        if salir.lower() == 's':
+            print("¡Hasta luego!")
+            break
