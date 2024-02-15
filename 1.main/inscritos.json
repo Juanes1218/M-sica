@@ -1,0 +1,18 @@
+{
+  "datos": {
+    "inscripciones": [
+      {
+        "id": 1,
+        "Identificacion": 23324,
+        "Nombre": "\u00f1a\u00f1\u00f1a\u00f1a",
+        "Apellido1": "\u00f1a\u00f1d\u00f1aslda\u00f1l\u00f1d",
+        "Apellido2": "o\u00f3\u00f3\u00f3s",
+        "Direccion": "dada",
+        "Acudiente": "a\u00e1\u1e83",
+        "Celular": 2432423,
+        "Telefono": 432423,
+        "Estado": "Inscrito"
+      }
+    ]
+  }
+}

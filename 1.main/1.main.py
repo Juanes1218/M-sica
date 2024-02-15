@@ -1,5 +1,4 @@
-from funciones import limpiar_pantalla, mostrar_menu_principal, menu_campers, menu_coordinador
-
+from  funciones import limpiar_pantalla, mostrar_menu_principal, menu_campers, menu_coordinador
 
 while True:
         limpiar_pantalla()
